@@ -1,0 +1,99 @@
+.header{
+    width: 100%;
+}
+
+.inputFrame{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #171719;
+    border-radius: 20px;
+}
+.inputs{
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+}
+.inputs label{
+    color: #9D9D9D;
+    font-size: 12px;
+}
+
+.header, .header .inputFrame{
+    display: flex;
+    flex-direction: column;
+}
+.header .inputs, .accessories, .favoriteAndLog{
+    display: flex;
+}
+.input{
+    background-color: #202022;
+    height: 100px;
+    width: 43%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.swap{
+    background-color: #202022;
+    padding: 5px;
+    border-radius: 5px;
+}
+input{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 30px;
+    width: 70%;
+}
+.sendInput, .receiveInput{
+    height: 50%;
+}
+.sendInput *, .receiveInput *{
+    color: white;
+}
+.receiveInput input{
+    color: #CEF739;
+}
+select[name=currency]{
+    background-color: #2E2E2E;
+    height: 70%;
+    width: 60px;
+    border-radius: 10px;
+    border: none;
+}
+.accessories{ 
+    border-top: 1px solid #202022;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    height: 65px;
+}
+.favoriteAndLog{
+    width: 33%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
+}
+.favorite{
+    background-color: #CEF739;
+    padding: 5px 7px;
+    border-radius: 7px;
+    color: #0A0A0A;
+    font: bold 44px;
+    
+}
+.log{
+    background-color: #0A0A0A;
+    padding: 5px 7px;
+    border: 2px solid #CEF739;
+    border-radius: 7px;
+
+}
