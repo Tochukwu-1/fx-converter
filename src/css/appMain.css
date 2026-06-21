@@ -1,0 +1,57 @@
+/* Navigation */
+.AppMain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    width: 100%;
+    border-bottom: 1px solid #202022;
+}
+nav .menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+}
+nav a .notification{
+    margin-left: 5px;
+    background-color: #283300;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
+.active{
+    border-bottom: 2px solid #cef739;
+    padding: 0 5px 5px;
+
+}
+
+/* HISTORY */
+.statsAndTime{
+    display: flex;
+}
+.conversionStats{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #202022;
+    width: 22%;
+    text-align: center;
+}
+
+.stats li{
+    list-style-type: none;
+}
