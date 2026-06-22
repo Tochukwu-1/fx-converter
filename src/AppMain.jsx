@@ -33,7 +33,14 @@ function AppMain(){
                             <li>🔼 +0.16%</li>
                         </div>
                     </div>
-                    <div className="timeFrame"></div>
+                    <div className="timeFrame">
+                        <div className="time">1D</div>
+                        <div className="time">1H</div>
+                        <div className="time active">1M</div>
+                        <div className="time">3M</div>
+                        <div className="time">1Y</div>
+                        <div className="time">5Y</div>
+                    </div>
                 </div>
                 <div className="chart"> <a href="placehold.co/400x400"></a></div>
             </main>
