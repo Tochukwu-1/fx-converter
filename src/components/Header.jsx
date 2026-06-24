@@ -1,6 +1,6 @@
 // import React from "react"
 import { useEffect, useState } from "react"
-import "./css/header.css"
+import "../css/header.css"
 
 function Header() {
   const [amount, setAmount] = useState({input: 1, output: 0})
