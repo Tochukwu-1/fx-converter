@@ -1,7 +1,6 @@
 import "../css/appMain.css"
-import History from "./Navigation/History.jsx"
 
-function AppMain(){
+function AppMain({children}){
 
     return(
         <section className="AppMain">
@@ -14,7 +13,7 @@ function AppMain(){
                 </div>
             </nav>
             <main>
-                <History />
+                {children}
             </main>
         </section>
     )

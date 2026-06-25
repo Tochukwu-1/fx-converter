@@ -1,4 +1,5 @@
 
+import App from "../../App"
 
 
 
@@ -6,7 +7,7 @@ function History(){
 
 
     return(
-        <>
+        <App>
         <div className="statsAndTime">
                     <div className="conversionStats">
                         <div className="stats">
@@ -36,7 +37,7 @@ function History(){
                     </div>
                 </div>
                 <div className="chart"> <a href="placehold.co/400x400"></a></div>
-        </>
+        </App>
     )
 }
 
