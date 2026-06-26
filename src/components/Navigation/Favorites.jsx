@@ -1,5 +1,5 @@
 import App from "../../App"
-
+import "../../css/favorite.css"
 
 function Favorites(){
 
@@ -7,8 +7,17 @@ function Favorites(){
     return(
         <App>
             <div className="favorites">
-
-                <h2>FAVORITES</h2>
+                <h4>PINNED PAIRS</h4>
+                <div className="favoriteItems">
+                    <div className="favoriteItem"></div>
+                    <div className="favoriteItem"></div>
+                    <div className="favoriteItem"></div>
+                    <div className="favoriteItem"></div>
+                    <div className="favoriteItem"></div>
+                    <div className="favoriteItem"></div>
+                    <div className="favoriteItem"></div>
+                    <div className="favoriteItem"></div>
+                </div>
             </div>
         </App>
     )

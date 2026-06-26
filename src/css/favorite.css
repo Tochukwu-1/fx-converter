@@ -1,0 +1,22 @@
+.favorites{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #171719;
+
+}
+.favoriteItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+    width: 95%;
+    margin: 0 auto;
+}
+.favoriteItem{
+    height: 10%;
+    width: 100%;
+    background-color: #202022;
+    border-radius: 10px;
+}
