@@ -19,16 +19,21 @@ function App({children}) {
     }
     const currencyData = await currencyRes.json()
     console.log(currencyData);
-    setRate(rate => ({...rate,receive: (currencyData[0].rate)}))
+    setRate(rate => ({...rate,receive: (currencyData[0]?.rate)}))
     console.log(rate.receive);
     
     function convert() {
     const api = "https://api.frankfurter.dev";
+    if(input.send === input.receive){
+      setAmount(amount => ({...amount, output: amount.input}))
+    }else{
     return fetch(`${api}/v2/rate/${input.send}/${input.receive}`)
       .then((r) => r.json())
-      .then((d) => (amount.input * d.rate).toFixed(2));
-  }
-  convert().then((result => setAmount(amount => ({...amount, output: result}))))
+      .then((d) =>  (amount.input * d.rate).toFixed(2))
+      .then((result => setAmount(amount => ({...amount, output: +result}))));
+    }
+    }
+  convert()
     
   }
   fetchCurrency()

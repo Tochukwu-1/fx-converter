@@ -1,7 +1,7 @@
 // import React from "react"
 import "../css/header.css"
 
-function Header({input, setInput,amount, setAmount, rate, setRate}) {
+function Header({input, setInput,amount, setAmount, rate}) {
 
 
 

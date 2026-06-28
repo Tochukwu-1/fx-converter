@@ -1,10 +1,10 @@
 
 import App from "../../App"
-
-
+// import CurrencyChart from "../../CurrencyChart.jsx"
+import Testchart from "../../Testchart.jsx"
 
 function History(){
-
+    
 
     return(
         <App>
@@ -36,7 +36,10 @@ function History(){
                         <div className="time">5Y</div>
                     </div>
                 </div>
-                <div className="chart"> <a href="placehold.co/400x400"></a></div>
+                <div className="chart" >
+                    <Testchart />
+                    {/* <CurrencyChart /> */}
+                </div>
         </App>
     )
 }
