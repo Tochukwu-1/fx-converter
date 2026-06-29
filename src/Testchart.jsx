@@ -24,7 +24,7 @@ export default function TradingChart() {
         
       ])
 
-  const api =  fetch('https://api.frankfurter.dev/v1/2026-06-01..?base=USD&symbols=EUR')
+  const api =  fetch('https://api.frankfurter.dev/v1/2026-01-20..?base=USD&symbols=EUR')
     useEffect(()=>{
         async function fetchChart (){
        const chartRes = await api
@@ -32,13 +32,11 @@ export default function TradingChart() {
         throw new Error ("failed to fetch chart")
        }
        const chartData = await chartRes.json()
-       Object.entries(chartData.rates).forEach(([date, rates]) => {
-    console.log(date);      // 2026-01-01
-    console.log(rates.EUR); // 0.85
-    setChartValue([...chartValue,rates.EUR])
-    console.log(chartValue);
-    
-});
+       const currencyRates = Object.values(chartData.rates).map(([rates]) => 
+        rates.EUR  );
+        console.log(currencyRates);
+        // setChartValue(currencyRates)
+        console.log(chartValue.sort())
        
     }
     fetchChart()
@@ -60,15 +58,20 @@ export default function TradingChart() {
 
     scales: {
       x: {
+        min: 0,     // Force the scale to start at 0
+        max: chartValue.length,
         grid: {
           display: false,
         },
         ticks: {
           color: "#666",
         },
+        
       },
 
       y: {
+        min: 0.83,     // Force the scale to start at 0
+        max: .88 ,
         grid: {
           color: "rgba(255,255,255,.05)",
         },
